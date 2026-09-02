@@ -1,5 +1,13 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Supabase 설정
+
+1. `.env.example`를 `.env.local`로 복사하고 프로젝트 URL과 anon 키를 채운다.
+2. `supabase/migrations/0001_init.sql`을 SQL Editor에서 실행한다.
+3. **Authentication → Sign In / Providers → Email 에서 "Confirm email"을 끈다.**
+   켜져 있으면 가입 직후 세션이 만들어지지 않아 메인으로 들어가지 못하고,
+   기본 메일 발송 한도(시간당 2~3통)에 걸려 가입 자체가 막힌다.
+
 ## Getting Started
 
 First, run the development server:
